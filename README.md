@@ -1,4 +1,27 @@
-# Задача
+## Запуск
+1. Развернуть проект, создать .env
+2. Заполнить переменные в .env:
+   ```python
+   # Пример
+   POSTGRES_URL = "postgresql+asyncpg://user:password@db:5432/visits"
+   SECRET_KEY = "299F4B2B6C0183AC3EFA8C3374B893CA6034B8D00FAEE0E9A79393A27B329D9F"
+   ALGORITHM = "HS256"
+   POSTGRES_USER="user"
+   POSTGRES_PASSWORD="password"
+   POSTGRES_DB="visits"
+   ACCESS_TOKEN_EXPIRE_MINUTES = 30
+   ```
+4. Выполнить  `docker-compose up -d --build`
+
+
+- Swagger
+`http://localhost:8000/docs`
+
+
+- Redoc
+`http://localhost:8000/redoc`
+
+## Задача
 
 Создать систему API, которая включает:
 1. Аутентификацию и управление пользователями.
