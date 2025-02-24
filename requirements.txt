@@ -1,0 +1,26 @@
+# Основные зависимости
+fastapi>=0.109.0
+uvicorn>=0.27.0
+PyJWT==2.10.1
+# База данных и ORM
+sqlalchemy[asyncio]>=2.0.30
+asyncpg>=0.29.0
+
+# Аутентификация и безопасность
+passlib[bcrypt]>=1.7.4  # Хеширование паролей
+
+# Валидация данных
+pydantic>=2.6.4
+pydantic-settings>=2.2.1  # Для конфигурации
+
+# Дополнительные утилиты
+python-multipart>=0.0.9  # Для работы с формами
+python-dateutil>=2.9.0  # Работа с датами
+typing-extensions>=4.11.0  # Поддержка аннотаций
+
+# Документация (опционально)
+scalar_fastapi>=0.1.2  # Альтернативная документация
+email-validator==2.2.0
+
+python-dotenv~=1.0.1
+starlette~=0.45.3
